@@ -118,8 +118,8 @@ const VideoPlayerFrame = ({ video }) => {
           }}
         />
 
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div className="video-controls-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+          <div className="video-controls-main" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <button
               onClick={togglePlay}
               style={{ background: 'none', border: 'none', color: '#FAF6F0', cursor: 'pointer' }}
@@ -132,7 +132,7 @@ const VideoPlayerFrame = ({ video }) => {
             >
               {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
             </button>
-            <span style={{ fontSize: '0.9rem', color: '#FAF6F0', fontWeight: 500 }}>
+            <span className="video-title" style={{ fontSize: '0.9rem', color: '#FAF6F0', fontWeight: 500 }}>
               {video.title}
             </span>
           </div>
@@ -185,7 +185,7 @@ export const VideoSection = () => {
           </h2>
         </motion.div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2.5rem' }}>
           {CONFIG.VIDEOS.map((video, idx) => (
             <motion.div
               key={video.id || idx}

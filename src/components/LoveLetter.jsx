@@ -10,7 +10,7 @@ export const LoveLetter = () => {
       style={{
         backgroundColor: '#16040A',
         width: '100%',
-        padding: '7rem 1.5rem',
+        padding: '6rem 1.5rem',
         position: 'relative',
         overflow: 'hidden'
       }}
@@ -35,7 +35,7 @@ export const LoveLetter = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          style={{ textAlign: 'center', marginBottom: '2.5rem' }}
+          style={{ textAlign: 'center', marginBottom: '2rem' }}
         >
           <div style={{
             display: 'inline-flex',
@@ -64,7 +64,7 @@ export const LoveLetter = () => {
             background: 'linear-gradient(135deg, rgba(37, 8, 17, 0.95) 0%, rgba(26, 5, 11, 0.98) 100%)',
             border: '1px solid rgba(212, 175, 55, 0.3)',
             borderRadius: '20px',
-            padding: 'clamp(1.5rem, 4vw, 2.5rem)',
+            padding: 'clamp(1.25rem, 3vw, 2rem)',
             boxShadow: '0 20px 60px rgba(0,0,0,0.8), inset 0 0 40px rgba(212, 175, 55, 0.05)',
             position: 'relative'
           }}
@@ -76,7 +76,7 @@ export const LoveLetter = () => {
             </svg>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             {CONFIG.LOVE_LETTER.PARAGRAPHS.map((para, index) => {
               const isGreeting = index === 0;
               const isHighlight = index === 2 || index === 5 || index === 7;
@@ -106,7 +106,7 @@ export const LoveLetter = () => {
                       : isClosing
                       ? '1.4rem'
                       : '1rem',
-                    lineHeight: 1.7,
+                    lineHeight: 1.6,
                     color: isGreeting
                       ? '#D4AF37'
                       : isHighlight
@@ -126,8 +126,8 @@ export const LoveLetter = () => {
 
           {/* Bottom Bloom Flourish */}
           <div style={{
-            marginTop: '2rem',
-            paddingTop: '1.25rem',
+            marginTop: '1.5rem',
+            paddingTop: '1rem',
             borderTop: '1px solid rgba(212, 175, 55, 0.2)',
             display: 'flex',
             alignItems: 'center',

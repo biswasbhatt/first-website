@@ -146,7 +146,7 @@ export const MusicPlayer = ({ isUnlocked }) => {
       />
 
       <div
-        className="glass-panel"
+        className="glass-panel music-player"
         style={{
           position: 'fixed',
           bottom: '24px',
@@ -202,8 +202,8 @@ export const MusicPlayer = ({ isUnlocked }) => {
         </button>
 
         {/* Title */}
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <span style={{ fontSize: '0.8rem', color: '#FAF6F0', fontWeight: 500 }}>
+        <div className="music-player-copy" style={{ display: 'flex', flexDirection: 'column' }}>
+          <span className="music-player-title" style={{ fontSize: '0.8rem', color: '#FAF6F0', fontWeight: 500 }}>
             {CONFIG.MUSIC_TITLE}
           </span>
           <span style={{ fontSize: '0.65rem', color: 'rgba(250, 246, 240, 0.5)' }}>

@@ -59,7 +59,7 @@ export const FirstReveal = ({ onComplete }) => {
             }}
           >
             <MediaImage
-              src={CONFIG.PHOTO_STORY[0]?.url || "/assets/photos/ruby-hero.jpg"}
+              src={CONFIG.PHOTO_STORY[0]?.url || "/assets/photos/rose-hero.jpg"}
               alt={CONFIG.HER_NAME}
               className="img-cinematic"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}

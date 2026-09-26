@@ -22,10 +22,7 @@ html, body {
 /* Film Grain Overlay */
 .film-grain {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   pointer-events: none;
   z-index: 999;
   opacity: 0.035;
@@ -119,4 +116,50 @@ section {
   background: var(--color-gold);
   width: 200px;
   height: 200px;
+}
+
+.memory-meta {
+  flex-wrap: wrap;
+}
+
+.video-controls-main {
+  min-width: 0;
+  flex: 1 1 180px;
+}
+
+.video-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .video-controls-row {
+    flex-wrap: wrap;
+  }
+
+  .music-player {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    justify-content: space-between;
+    gap: 8px !important;
+    padding: 8px 12px !important;
+    border-radius: 20px !important;
+  }
+
+  .music-player-copy {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .music-player-title {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .music-player input[type='range'] {
+    width: 48px !important;
+  }
 }

@@ -28,7 +28,7 @@ export const CONFIG = {
   HERO: {
     SUBTITLE: "Somewhere between distance and memories,\nyou became one of the most beautiful parts of my life.",
     SCROLL_TEXT: "Scroll to open your story ↓",
-    HERO_PHOTO: "/assets/photos/ruby-hero.jpg"
+    HERO_PHOTO: "/assets/photos/rose-hero.jpg"
   },
 
   DISTANCE_SECTION: {
@@ -40,7 +40,7 @@ export const CONFIG = {
       "Because some connections don't need the same room, the same city, or even the same sky.",
       "They just need two people who remember."
     ],
-    BACKGROUND_PHOTO: "/assets/photos/ruby-01.jpg"
+    BACKGROUND_PHOTO: "/assets/photos/rose-01.jpg"
   },
 
   FIVE_THINGS: [
@@ -85,28 +85,28 @@ export const CONFIG = {
   PHOTO_STORY: [
     {
       id: 1,
-      url: "/assets/photos/ruby-01.jpg",
+      url: "/assets/photos/rose-01.jpg",
       title: "Traditional Elegance",
       caption: "Your breathtaking grace in traditional attire",
       tag: "Best Photo ❤️"
     },
     {
       id: 2,
-      url: "/assets/photos/ruby-02.jpg",
+      url: "/assets/photos/rose-02.jpg",
       title: "Soft Warmth",
       caption: "That gentle, thoughtful look I adore",
       tag: "Sanu ❤️"
     },
     {
       id: 3,
-      url: "/assets/photos/ruby-03.jpg",
+      url: "/assets/photos/rose-03.jpg",
       title: "A Quiet Moment",
       caption: "Unfiltered beauty that stays in my mind",
       tag: "Special"
     },
     {
       id: 4,
-      url: "/assets/photos/ruby-04.jpg",
+      url: "/assets/photos/rose-04.jpg",
       title: "Pure Charm",
       caption: "Every detail that makes you so special to me",
       tag: "Rose"
@@ -117,7 +117,7 @@ export const CONFIG = {
     {
       id: 1,
       type: "image",
-      url: "/assets/photos/ruby-01.jpg",
+      url: "/assets/photos/rose-01.jpg",
       title: "A moment worth remembering.",
       date: "27 September",
       location: "In my heart"
@@ -125,7 +125,7 @@ export const CONFIG = {
     {
       id: 2,
       type: "image",
-      url: "/assets/photos/ruby-02.jpg",
+      url: "/assets/photos/rose-02.jpg",
       title: "One of my favorites.",
       date: "Cherished Day",
       location: "Miles Away, Close In Spirit"
@@ -133,7 +133,7 @@ export const CONFIG = {
     {
       id: 3,
       type: "image",
-      url: "/assets/photos/ruby-03.jpg",
+      url: "/assets/photos/rose-03.jpg",
       title: "Another memory I would keep.",
       date: "Special Moment",
       location: "Everywhere With You"
@@ -141,7 +141,7 @@ export const CONFIG = {
     {
       id: 4,
       type: "image",
-      url: "/assets/photos/ruby-04.jpg",
+      url: "/assets/photos/rose-04.jpg",
       title: "Forever cherished.",
       date: "Always Special",
       location: "In My Mind"
@@ -195,11 +195,11 @@ export const CONFIG = {
     REVEAL_NAME_2: "Sanu...",
     QUOTE: "If I could give you one thing today, it would be the ability to see yourself the way I see you.",
     FINAL_WISH: "Happy Birthday. ❤️",
-    FEATURED_PHOTO: "/assets/photos/ruby-hero.jpg"
+    FEATURED_PHOTO: "/assets/photos/rose-hero.jpg"
   },
 
   FINAL_SECTION: {
-    HERO_PHOTO: "/assets/photos/ruby-hero.jpg",
+    HERO_PHOTO: "/assets/photos/rose-hero.jpg",
     HEADING: "Happy Birthday, Sanu ❤️",
     DATE: "27 September",
     TAGLINE: "From miles away,\nbut always close in memory.",

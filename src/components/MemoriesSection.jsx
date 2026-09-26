@@ -38,7 +38,7 @@ export const MemoriesSection = () => {
           </h2>
         </motion.div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2rem' }}>
           {CONFIG.MEMORIES.map((item, index) => (
             <motion.div
               key={item.id || index}
@@ -67,7 +67,7 @@ export const MemoriesSection = () => {
                   {item.title}
                 </h3>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'rgba(250, 246, 240, 0.6)', fontSize: '0.8rem' }}>
+                <div className="memory-meta" style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'rgba(250, 246, 240, 0.6)', fontSize: '0.8rem' }}>
                   {item.date && (
                     <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <Calendar size={13} style={{ color: '#D4AF37' }} />
