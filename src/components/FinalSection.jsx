@@ -10,9 +10,9 @@ export const FinalSection = () => {
       id="final-section"
       style={{
         position: 'relative',
-        width: '100vw',
+        width: '100%',
         height: '100vh',
-        minHeight: '700px',
+        minHeight: '560px',
         padding: 0,
         overflow: 'hidden',
         display: 'flex',

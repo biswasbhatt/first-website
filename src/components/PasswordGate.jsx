@@ -37,7 +37,7 @@ export const PasswordGate = ({ onUnlock }) => {
           position: 'fixed',
           top: 0,
           left: 0,
-          width: '100vw',
+          width: '100%',
           height: '100vh',
           zIndex: 9999,
           backgroundColor: '#0D0206',
@@ -50,7 +50,7 @@ export const PasswordGate = ({ onUnlock }) => {
           overflow: 'hidden'
         }}
       >
-        {/* Ambient Background Image of Ruby */}
+        {/* Ambient Background Image of Rose */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, overflow: 'hidden' }}>
           <MediaImage
             src={CONFIG.HERO.HERO_PHOTO}
@@ -109,7 +109,7 @@ export const PasswordGate = ({ onUnlock }) => {
             backdropFilter: 'blur(20px)'
           }}
         >
-          {/* Framed Portrait of Ruby right on the Lock Card */}
+          {/* Framed Portrait of Rose right on the Lock Card */}
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

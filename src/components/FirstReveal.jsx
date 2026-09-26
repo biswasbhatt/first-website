@@ -9,7 +9,7 @@ export const FirstReveal = ({ onComplete }) => {
 
   useEffect(() => {
     const timer1 = setTimeout(() => setStep(1), 1200); // Flower appears & photo fades
-    const timer2 = setTimeout(() => setStep(2), 2600); // "Ruby."
+    const timer2 = setTimeout(() => setStep(2), 2600); // "Rose."
     const timer3 = setTimeout(() => setStep(3), 4800); // "But to me..."
     const timer4 = setTimeout(() => setStep(4), 7000); // "Sanu. ❤️"
     const timer5 = setTimeout(() => setStep(5), 9200); // "Happy Birthday. 27 September"
@@ -32,7 +32,7 @@ export const FirstReveal = ({ onComplete }) => {
         position: 'fixed',
         top: 0,
         left: 0,
-        width: '100vw',
+        width: '100%',
         height: '100vh',
         zIndex: 9000,
         backgroundColor: '#0D0206',

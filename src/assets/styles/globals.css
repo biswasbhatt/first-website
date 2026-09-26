@@ -66,6 +66,7 @@ button, a, input, .interactive-card {
 section {
   position: relative;
   width: 100%;
+  max-width: 100%;
   padding: 6rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -76,6 +77,12 @@ section {
 @media (min-width: 768px) {
   section {
     padding: 8rem 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 5rem 1rem;
   }
 }
 

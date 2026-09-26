@@ -136,7 +136,7 @@ export const PhotoStory = () => {
                     fontWeight: 600,
                     letterSpacing: '0.05em'
                   }}>
-                    {photo.tag || "Ruby"}
+                    {photo.tag || "Rose"}
                   </div>
 
                   <div style={{
@@ -257,7 +257,7 @@ export const PhotoStory = () => {
                   {selectedPhoto.title}
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: '#E899A5', marginTop: '2px' }}>
-                  {selectedPhoto.caption || "Ruby (Sanu ❤️)"}
+                  {selectedPhoto.caption || "Rose (Sanu ❤️)"}
                 </p>
               </div>
             </motion.div>

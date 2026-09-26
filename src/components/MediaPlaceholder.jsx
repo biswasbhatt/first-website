@@ -55,7 +55,7 @@ export const MediaImage = ({ src, alt, className, style, onClick }) => {
         </div>
 
         <p className="font-serif" style={{ fontSize: '1.25rem', color: '#FAF6F0', marginBottom: '0.25rem', fontWeight: 500 }}>
-          {alt || "Ruby (Sanu ❤️)"}
+          {alt || "Rose (Sanu ❤️)"}
         </p>
         <span style={{ fontSize: '0.75rem', color: 'rgba(250, 246, 240, 0.5)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
           Photo Asset ({src ? src.split('/').pop() : 'Missing'})

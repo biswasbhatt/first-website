@@ -10,9 +10,9 @@ export const HeroSection = () => {
       id="hero"
       style={{
         position: 'relative',
-        width: '100vw',
+        width: '100%',
         height: '100vh',
-        minHeight: '650px',
+        minHeight: '520px',
         padding: 0,
         overflow: 'hidden',
         display: 'flex',

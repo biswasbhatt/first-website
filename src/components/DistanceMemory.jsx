@@ -139,7 +139,7 @@ export const DistanceMemory = () => {
             <Heart size={24} fill="#E899A5" style={{ filter: 'drop-shadow(0 0 10px #E899A5)' }} />
           </motion.div>
 
-          {/* Node Ruby (Point B) */}
+          {/* Node Rose (Point B) */}
           <motion.div
             initial={{ x: 40, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

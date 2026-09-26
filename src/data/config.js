@@ -1,11 +1,11 @@
 // ==============================================================================
-// CONFIGURATION FILE FOR RUBY'S (SANU ❤️) CINEMATIC BIRTHDAY LOVE WEBSITE
+// CONFIGURATION FILE FOR ROSE'S (SANU ❤️) CINEMATIC BIRTHDAY LOVE WEBSITE
 // Everything here can be easily modified by Shivam.
 // ==============================================================================
 
 export const CONFIG = {
   // Personal Details
-  HER_NAME: "Ruby",
+  HER_NAME: "Rose",
   NICKNAME: "Sanu",
   MY_NAME: "Shivam",
   BIRTHDAY: "27 September",
@@ -104,7 +104,7 @@ export const CONFIG = {
       url: "/assets/photos/ruby-04.jpg",
       title: "Pure Charm",
       caption: "Every detail that makes you so special to me",
-      tag: "Ruby"
+      tag: "Rose"
     }
   ],
 
@@ -174,7 +174,7 @@ export const CONFIG = {
       "Maybe we are far apart right now, but distance cannot change the memories we have made.",
       "And if there is one thing I want you to remember today, it's this:",
       "You are loved.\nYou are remembered.\nAnd you are incredibly special to me.",
-      "Happy Birthday, Ruby.",
+      "Happy Birthday, Rose.",
       "Happy Birthday, my Sanu. ❤️",
       "With love,\nShivam"
     ]
@@ -185,14 +185,14 @@ export const CONFIG = {
     SUBTITLE: "Different places. Different days. Still the same story.",
     FINAL_NOTE: "Until one day, the distance will simply be another chapter we remember.",
     POINT_A: "Shivam",
-    POINT_B: "Ruby (Sanu ❤️)"
+    POINT_B: "Rose (Sanu ❤️)"
   },
 
   SURPRISE: {
     INITIAL_PROMPT: "Wait...",
     SUBTITLE: "I saved one more thing for you.",
     BUTTON_TEXT: "Open it ❤️",
-    REVEAL_NAME_1: "Ruby...",
+    REVEAL_NAME_1: "Rose...",
     REVEAL_NAME_2: "Sanu...",
     QUOTE: "If I could give you one thing today, it would be the ability to see yourself the way I see you.",
     FINAL_WISH: "Happy Birthday. ❤️",
