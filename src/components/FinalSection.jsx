@@ -25,8 +25,8 @@ export const FinalSection = () => {
 
       {/* Fullscreen Photo with Slow Cinematic Zoom */}
       <motion.div
-        animate={{ scale: [1, 1.08] }}
-        transition={{ duration: 25, repeat: Infinity, repeatType: 'reverse', ease: 'linear' }}
+        animate={{ scale: [1, 1.04] }}
+        transition={{ duration: 16, repeat: Infinity, repeatType: 'reverse', ease: 'linear' }}
         style={{ position: 'absolute', inset: 0, zIndex: 1 }}
       >
         <MediaImage
@@ -50,10 +50,10 @@ export const FinalSection = () => {
         maxWidth: '800px'
       }}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 0.8 }}
         >
           <h2 className="font-serif text-gold" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.2rem)', fontWeight: 600, marginBottom: '0.5rem' }}>
             {CONFIG.FINAL_SECTION.HEADING}

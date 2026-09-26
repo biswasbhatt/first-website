@@ -13,6 +13,11 @@ export const CONFIG = {
   // Security Password (case-insensitive)
   PASSWORD: "shivam",
 
+  // Background Music
+  MUSIC_TITLE: "Tujhe Kitna Chahne Lage",
+  MUSIC_TRACK: "/assets/audio/vidssave.com Full Song_ Tujhe Kitna Chahne Lage _ Kabir Singh _ Mithoon Feat. Arijit Singh _ Shahid K, Kiara A low.mp4",
+  MUSIC_START_TIME: 0,
+
   // Tagline & Concepts
   MAIN_CONCEPT: {
     LINE_1: "Different places.",
@@ -159,23 +164,17 @@ export const CONFIG = {
   ],
 
   LOVE_LETTER: {
-    TITLE: "A Letter I Couldn't Say in Just One Message",
+    TITLE: "A little note for you",
     PARAGRAPHS: [
       "Dear Sanu,",
       "Happy Birthday.",
-      "I wish I could be there beside you today, watching you smile and telling you all of this in person.",
-      "But maybe that's what makes our story a little different.",
-      "We have distance between us, yet somehow you have still managed to become a part of so many of my thoughts, my smiles, my memories, and my favorite moments.",
-      "There are things I may not always know how to say perfectly, but I hope you know how genuinely special you are to me.",
-      "I love the little things about you.\nThe way you are.\nThe moments we share.\nThe memories we have created.\nAnd even the simple conversations that somehow stay in my mind longer than they should.",
-      "Today, on your birthday, I don't want to wish you just one happy day.",
-      "I want you to have countless reasons to smile.\nI want you to keep chasing the things that make you happy.\nI want beautiful moments to find you wherever you are.",
-      "And somewhere in all those moments,\nI hope there is still a little place for me.",
-      "Maybe we are far apart right now, but distance cannot change the memories we have made.",
-      "And if there is one thing I want you to remember today, it's this:",
-      "You are loved.\nYou are remembered.\nAnd you are incredibly special to me.",
+      "You are one of the sweetest parts of my life.",
+      "Even from far away, you still make my days feel lighter and warmer.",
+      "I love the little things about you — your smile, your calm, and the way you stay in my thoughts.",
+      "Thank you for being you.",
+      "I hope this year brings you more peace, more joy, and many beautiful moments.",
+      "You are loved, remembered, and deeply special to me.",
       "Happy Birthday, Rose.",
-      "Happy Birthday, my Sanu. ❤️",
       "With love,\nShivam"
     ]
   },

@@ -13,6 +13,7 @@ import { DistanceMemory } from './components/DistanceMemory';
 import { SurpriseSection } from './components/SurpriseSection';
 import { FinalSection } from './components/FinalSection';
 import { FallingPetals } from './components/FallingPetals';
+import { MusicPlayer } from './components/MusicPlayer';
 import { CustomCursor } from './components/CustomCursor';
 import './assets/styles/globals.css';
 
@@ -61,6 +62,7 @@ export default function App() {
           <DistanceMemory />
           <SurpriseSection />
           <FinalSection />
+          <MusicPlayer isUnlocked={isUnlocked} />
         </main>
       )}
     </div>

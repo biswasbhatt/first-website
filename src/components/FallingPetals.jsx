@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 
-export const FallingPetals = ({ density = 30, intensity = 'normal', includeHearts = true }) => {
+export const FallingPetals = ({ density = 18, intensity = 'normal', includeHearts = true }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     let animationFrameId;
     let width = (canvas.width = window.innerWidth);
@@ -20,7 +21,11 @@ export const FallingPetals = ({ density = 30, intensity = 'normal', includeHeart
 
     window.addEventListener('resize', handleResize);
 
-    const count = intensity === 'high' ? density * 2 : density;
+    const count = reducedMotion
+      ? Math.min(density, 12)
+      : intensity === 'high'
+        ? Math.min(Math.round(density * 1.5), 34)
+        : Math.round(density * 0.8);
     const particles = [];
 
     const petalColors = [
@@ -45,11 +50,11 @@ export const FallingPetals = ({ density = 30, intensity = 'normal', includeHeart
         isHeart,
         x: Math.random() * width,
         y: Math.random() * height - height,
-        size: isHeart ? Math.random() * 10 + 8 : Math.random() * 9 + 6,
-        speedY: Math.random() * 1.4 + 0.7,
-        speedX: Math.random() * 0.9 - 0.45,
+        size: isHeart ? Math.random() * 8 + 7 : Math.random() * 7 + 5,
+        speedY: reducedMotion ? Math.random() * 0.5 + 0.3 : Math.random() * 1.2 + 0.6,
+        speedX: Math.random() * 0.7 - 0.35,
         rotation: Math.random() * Math.PI * 2,
-        rotationSpeed: (Math.random() - 0.5) * 0.035,
+        rotationSpeed: (Math.random() - 0.5) * 0.025,
         color: isHeart 
           ? heartColors[Math.floor(Math.random() * heartColors.length)]
           : petalColors[Math.floor(Math.random() * petalColors.length)],

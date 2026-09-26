@@ -42,15 +42,16 @@ export const DistanceSection = () => {
         padding: '2rem 1.5rem'
       }}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 1.2 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.7 }}
           className="glass-panel"
           style={{
-            padding: '3rem 2rem',
-            border: '1px solid rgba(248, 225, 231, 0.12)',
-            background: 'rgba(26, 5, 11, 0.75)'
+            padding: '2.5rem 1.5rem',
+            border: '1px solid rgba(248, 225, 231, 0.14)',
+            background: 'rgba(26, 5, 11, 0.8)',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.35)'
           }}
         >
           <span style={{
@@ -69,14 +70,14 @@ export const DistanceSection = () => {
             style={{
               fontSize: 'clamp(2rem, 4vw, 3rem)',
               color: '#FAF6F0',
-              marginBottom: '2rem',
+              marginBottom: '1.5rem',
               fontWeight: 500
             }}
           >
             {CONFIG.DISTANCE_SECTION.TITLE}
           </h2>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {CONFIG.DISTANCE_SECTION.PARAGRAPHS.map((p, idx) => (
               <p
                 key={idx}
@@ -94,13 +95,14 @@ export const DistanceSection = () => {
           </div>
 
           <div style={{
-            marginTop: '2.5rem',
+            marginTop: '2rem',
             display: 'inline-block',
             padding: '10px 24px',
             borderTop: '1px solid rgba(212, 175, 55, 0.25)',
-            borderBottom: '1px solid rgba(212, 175, 55, 0.25)'
+            borderBottom: '1px solid rgba(212, 175, 55, 0.25)',
+            background: 'rgba(212, 175, 55, 0.03)'
           }}>
-            <p className="font-handwriting" style={{ fontSize: '1.75rem', color: '#D4AF37' }}>
+            <p className="font-handwriting" style={{ fontSize: 'clamp(1.35rem, 3vw, 1.8rem)', color: '#D4AF37' }}>
               "Different places. Same memories. One special person."
             </p>
           </div>

@@ -35,7 +35,7 @@ export const LoveLetter = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          style={{ textAlign: 'center', marginBottom: '3.5rem' }}
+          style={{ textAlign: 'center', marginBottom: '2.5rem' }}
         >
           <div style={{
             display: 'inline-flex',
@@ -44,12 +44,12 @@ export const LoveLetter = () => {
             color: '#D4AF37',
             marginBottom: '0.5rem'
           }}>
-            <Heart size={16} fill="#D4AF37" />
-            <span style={{ fontSize: '0.8rem', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
-              The Emotional Centerpiece
+            <Heart size={14} fill="#D4AF37" />
+            <span style={{ fontSize: '0.72rem', letterSpacing: '0.18em', textTransform: 'uppercase' }}>
+              For you
             </span>
           </div>
-          <h2 className="font-serif" style={{ fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', color: '#FAF6F0' }}>
+          <h2 className="font-serif" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#FAF6F0' }}>
             {CONFIG.LOVE_LETTER.TITLE}
           </h2>
         </motion.div>
@@ -63,8 +63,8 @@ export const LoveLetter = () => {
           style={{
             background: 'linear-gradient(135deg, rgba(37, 8, 17, 0.95) 0%, rgba(26, 5, 11, 0.98) 100%)',
             border: '1px solid rgba(212, 175, 55, 0.3)',
-            borderRadius: '24px',
-            padding: ' clamp(2rem, 5vw, 4rem)',
+            borderRadius: '20px',
+            padding: 'clamp(1.5rem, 4vw, 2.5rem)',
             boxShadow: '0 20px 60px rgba(0,0,0,0.8), inset 0 0 40px rgba(212, 175, 55, 0.05)',
             position: 'relative'
           }}
@@ -76,11 +76,11 @@ export const LoveLetter = () => {
             </svg>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {CONFIG.LOVE_LETTER.PARAGRAPHS.map((para, index) => {
               const isGreeting = index === 0;
-              const isHighlight = index === 6 || index === 8 || index === 12;
-              const isClosing = index >= 13;
+              const isHighlight = index === 2 || index === 5 || index === 7;
+              const isClosing = index >= 8;
 
               return (
                 <motion.p
@@ -88,7 +88,7 @@ export const LoveLetter = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-50px' }}
-                  transition={{ duration: 0.8, delay: index * 0.08 }}
+                  transition={{ duration: 0.8, delay: index * 0.06 }}
                   className={
                     isGreeting
                       ? "font-serif text-gold"
@@ -100,13 +100,13 @@ export const LoveLetter = () => {
                   }
                   style={{
                     fontSize: isGreeting
-                      ? '1.8rem'
+                      ? '1.5rem'
                       : isHighlight
-                      ? '1.25rem'
+                      ? '1.1rem'
                       : isClosing
-                      ? '1.75rem'
-                      : '1.05rem',
-                    lineHeight: 1.8,
+                      ? '1.4rem'
+                      : '1rem',
+                    lineHeight: 1.7,
                     color: isGreeting
                       ? '#D4AF37'
                       : isHighlight
@@ -126,20 +126,21 @@ export const LoveLetter = () => {
 
           {/* Bottom Bloom Flourish */}
           <div style={{
-            marginTop: '3rem',
-            pt: '2rem',
+            marginTop: '2rem',
+            paddingTop: '1.25rem',
             borderTop: '1px solid rgba(212, 175, 55, 0.2)',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            gap: '1rem'
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Heart size={16} fill="#E899A5" style={{ color: '#E899A5' }} />
-              <span className="font-handwriting" style={{ fontSize: '1.5rem', color: '#D4AF37' }}>
-                Forever Yours
+              <Heart size={14} fill="#E899A5" style={{ color: '#E899A5' }} />
+              <span className="font-handwriting" style={{ fontSize: '1.2rem', color: '#D4AF37' }}>
+                Forever yours
               </span>
             </div>
-            <span className="font-serif" style={{ fontSize: '1.3rem', color: '#FAF6F0' }}>
+            <span className="font-serif" style={{ fontSize: '1.1rem', color: '#FAF6F0' }}>
               — Shivam
             </span>
           </div>

@@ -59,9 +59,9 @@ export const HeroSection = () => {
         maxWidth: '850px'
       }}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
         >
           <div style={{
             display: 'inline-flex',
@@ -113,8 +113,8 @@ export const HeroSection = () => {
       <motion.a
         href="#distance"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 8, 0] }}
-        transition={{ opacity: { duration: 1, delay: 1 }, y: { repeat: Infinity, duration: 2, ease: 'easeInOut' } }}
+        animate={{ opacity: 1, y: [0, 6, 0] }}
+        transition={{ opacity: { duration: 0.6, delay: 0.4 }, y: { repeat: Infinity, duration: 1.8, ease: 'easeInOut' } }}
         style={{
           position: 'absolute',
           bottom: '36px',
