@@ -1,0 +1,42 @@
+/* ==============================================================================
+   LUXURIOUS ROMANTIC COLOR PALETTE & VARIABLES
+   ============================================================================== */
+
+:root {
+  /* Primary Colors */
+  --bg-dark: #120307;
+  --bg-deep-wine: #1A050B;
+  --bg-wine: #250811;
+  --bg-plum: #230919;
+  --bg-card: rgba(37, 8, 17, 0.55);
+  --bg-card-hover: rgba(55, 12, 26, 0.75);
+
+  /* Accents & Highlights */
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-glow: rgba(212, 175, 55, 0.3);
+  --color-blush: #F8E1E7;
+  --color-blush-soft: #F2CED8;
+  --color-rose: #E899A5;
+  --color-rose-deep: #D87082;
+  --color-rhododendron: #C2185B;
+  --color-rhododendron-light: #E91E63;
+  --color-ivory: #FAF6F0;
+  --color-text-muted: rgba(250, 246, 240, 0.65);
+  --color-text-dim: rgba(250, 246, 240, 0.4);
+
+  /* UI & Borders */
+  --border-glass: rgba(212, 175, 55, 0.15);
+  --border-blush: rgba(248, 225, 231, 0.12);
+  --glass-bg: rgba(26, 5, 11, 0.6);
+  --glass-border: 1px solid rgba(248, 225, 231, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+
+  /* Shadows */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(212, 175, 55, 0.25);
+  --shadow-rose: 0 0 30px rgba(232, 153, 165, 0.15);
+
+  /* Transitions */
+  --transition-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+}
